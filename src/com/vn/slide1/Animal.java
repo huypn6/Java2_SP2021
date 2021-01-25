@@ -1,48 +1,38 @@
 package com.vn.slide1;
 
 public abstract class Animal {
-	
+
 	public String name;
-	private int index;
-	String id;
-	protected String key;
-	
+	private int total;
+	String alias;
+	protected String fullName;
+
+	// hàm tạo - constructor
 	public Animal() {
-		System.out.println("Animal.....");
+
 	}
-	
-	public Animal(String name, int index, String id, String key) {
-		System.out.println("Animal.....");
+
+	public Animal(String name) {
 		this.name = name;
-		this.index = index;
-		this.id = id;
-		this.key = key;
 	}
-	
+
+	// protected method
 	public String getName() {
+		System.out.println("Parent get name");
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getIndex() {
-		return index;
+
+	public int getTotal() {
+		return total;
 	}
-	public void setIndex(int index) {
-		this.index = index;
-	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getKey() {
-		return key;
-	}
-	public void setKey(String key) {
-		this.key = key;
+
+	public void setTotal(int total) {
+		this.total = total;
 	}
 	
-	abstract protected void makeSound();
-}	
+	abstract public void speack();
+}

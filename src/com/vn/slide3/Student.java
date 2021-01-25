@@ -1,10 +1,12 @@
 package com.vn.slide3;
 
 public class Student {
-	private String name;
-	private double marks;
 
-	public Student(String name, double marks) {
+	private String name;
+	private Double marks;
+
+	public Student(String name, Double marks) {
+		super();
 		this.name = name;
 		this.marks = marks;
 	}
@@ -17,11 +19,11 @@ public class Student {
 		this.name = name;
 	}
 
-	public double getMarks() {
+	public Double getMarks() {
 		return marks;
 	}
 
-	public void setMarks(double marks) {
+	public void setMarks(Double marks) {
 		this.marks = marks;
 	}
 
